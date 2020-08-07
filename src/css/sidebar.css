@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #FF3E79;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.sidebar {
+  min-width: 320px;
+  max-width: 360px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'TT Lakes';
+}
+
+.sidebar__header {
+  position: relative;
+}
+
+.btn-close {
+  position: absolute;
+  top: 23px;
+  left: 24px;
+}
+
+.btn-img--close {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.sidebar__logo {
+  position: absolute;
+  top: 18px;
+  left: 80px;
+}
+
+.btn-search {
+  position: absolute;
+  top: 23px;
+  right: 24px;
+}
+
+.btn-search:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.btn-close:hover {
+  -webkit-animation: rotate 0.7s;
+          animation: rotate 0.7s;
+}
+
+.sidebar__list {
+  margin-left: 24px;
+  margin-top: 120px;
+  list-style: none;
+}
+
+.sidebar__item {
+  font-family: "TT Lakes", serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+  margin-left: -40px;
+}
+
+.sidebar__link::before {
+  content: url("../img/img-content/highlight.svg");
+  margin-left: -24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 22px;
+  opacity: 0;
+  -webkit-transform-origin: 1px 50%;
+          transform-origin: 1px 50%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.sidebar__link:hover::before {
+  -webkit-animation: increase 0.5s forwards;
+          animation: increase 0.5s forwards;
+}
+
+.sidebar__link {
+  display: block;
+  text-decoration: none;
+  color: #1B1C21;
+}
+
+.sidebar__button {
+  position: relative;
+  margin-top: 32px;
+}
+
+.btn-phone,
+.btn-chart,
+.btn-profile {
+  position: relative;
+  margin-right: 16px;
+}
+
+.btn-phone {
+  margin-left: 24px;
+}
+
+.sidebar__link--phone {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  color: #1B1C21;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 12px 0px 40px 24px;
+}
+
+.sidebar__link--mail {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+  font-weight: 700;
+  margin: 16px 0px 12px 24px;
+  cursor: pointer;
+}
+
+.sidebar__language {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  color: #1B1C21;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sidebar__language:active {
+  color: #7E7E82;
+}
+
+.sidebar__language--RU,
+.sidebar__language--EN,
+.sidebar__language--CH {
+  margin-right: 7px;
+}
+
+.sidebar__language--RU {
+  margin-left: 24px;
+}
+
+@-webkit-keyframes rotate {
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate {
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@-webkit-keyframes ding {
+  33% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  66% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
+@keyframes ding {
+  33% {
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  66% {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+}
+
+@-webkit-keyframes increase {
+  from {
+    -webkit-transform: scale(12);
+            transform: scale(12);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes increase {
+  from {
+    -webkit-transform: scale(12);
+            transform: scale(12);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes rotateY {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotateY {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+.btn-img--phone:hover {
+  -webkit-animation: ding 200ms infinite;
+          animation: ding 200ms infinite;
+}
+
+.btn-img--chat:hover {
+  -webkit-animation: increase 300ms;
+          animation: increase 300ms;
+  background-color: darkorange;
+}
+
+.btn-img--profile:hover {
+  -webkit-animation: rotateY 1s;
+          animation: rotateY 1s;
+}
