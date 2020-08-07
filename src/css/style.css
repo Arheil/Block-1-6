@@ -579,6 +579,7 @@
 	} }
 
 	/* sidebar 768px */
+	/*
 	body {
 		margin: 0;
 		padding: 0;
@@ -847,6 +848,7 @@
 		-webkit-animation: rotateY 1s;
 				animation: rotateY 1s;
 	  }
+	  */
 	/* sidebar-end 768px */
    
   .feedback {
