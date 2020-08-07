@@ -1,0 +1,370 @@
+.slider {
+	background: $bgColor;
+	min-width: 320px;
+	max-width: 1120px;
+	margin: 0 auto;
+  }
+  
+  .slider__title {
+	border-top: 2px solid $borderColor;
+	margin: 0;
+	padding: 20px 35px 20px 35px;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 16px;
+	background: linear-gradient(90deg, $bgColor 0%, white 98.61%);
+  }
+  
+  .slide {
+	justify-content: space-around;
+	border: 2px solid #eaeaea;
+	border-radius: 6px;
+	background-color: white;
+	font-size: 16px;
+	text-decoration: none;
+	display: flex;
+  }
+  
+  .brands__slide {
+	min-width: 224px;
+	min-height: 72px;
+	max-height: 72px;
+  }
+  
+  .prices__slide {
+	color: black;
+	flex-shrink: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+  }
+  
+  .tech__slide {
+	min-height: 160px;
+	max-height: 160px;
+	min-width: 240px;
+	max-width: 240px;
+	padding: 16px;
+	position: relative;
+	font-weight: bold;
+	color: black;
+  }
+  
+  .slide__logo-img {
+	margin-right: auto;
+	margin-left: 10px;
+  }
+  
+  .tech__description {
+	position: absolute;
+	left: 5%;
+  }
+  
+  .goto {
+	margin-right: 10px;
+	margin-top: 3px;
+  }
+  
+  .goto:hover {
+	transition: transform 1.5s;
+	transform: scale(1.1);
+	cursor: pointer;
+  }
+  
+  .show-all {
+	margin-top: 15px;
+	margin-left: 32px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	font-family: TTLakes, sans-serif;
+	margin-bottom: 16px;
+  }
+  
+  .show-all:focus,
+  .goto:focus {
+	outline: none;
+  }
+  
+  .show-all__img {
+	margin-right: 10px;
+  }
+  
+  .brands__wrapper {
+	height: 160px;
+  }
+  
+  .tech__wrapper {
+	height: 160px;
+  }
+  
+  .prices__wrap {
+	max-width: 90%;
+	margin: 10px auto 0 auto;
+  }
+  
+  .brands__container,
+  .tech__container {
+	margin-top: 10px;
+  }
+  
+  .prices__item,
+  .prices__head {
+	display: flex;
+	width: 100%;
+	padding: 0 12px;
+	max-height: 10px;
+  }
+  
+  .tech__goto {
+	position: absolute;
+	bottom: 5%;
+	right: 2%;
+  }
+  
+  .prices__head {
+	padding-bottom: 5px;
+	color: $grey;
+  }
+  
+  @media (max-width: 767px) {
+	.brands__container {
+	  width: 90%;
+	  height: 72px;
+	}
+  
+	.tech__container {
+	  width: 90%;
+	}
+  
+	.brands__slide {
+	  max-width: 224px;
+	}
+  
+	.prices__slide {
+	  color: black;
+	  flex-shrink: 0;
+	  width: 260px;
+	  height: 200px;
+	  position: relative;
+	}
+  
+	.service__title,
+	.price__title,
+	.time__title {
+	  margin-top: 15px;
+	  color: $grey;
+	}
+  
+	.tech__goto,
+	.prices__goto {
+	  position: absolute;
+	  bottom: 5%;
+	  right: 2%;
+	}
+  
+	.prices__wrap {
+	  margin: 0 auto;
+	}
+  
+	.prices__item {
+	  display: flex;
+	  flex-direction: column;
+	  font-size: 0.9em;
+	  justify-content: space-between;
+	}
+  
+	.slider__wrapper {
+	  padding-top: 20px;
+	}
+  
+	.slider__title {
+	  padding-left: 20px;
+	}
+  
+	.swiper-pagination {
+	  position: relative !important;
+	  display: flex;
+	  justify-content: center;
+	}
+  
+	.swiper-pagination-bullet {
+	  margin: 15px 5px;
+	  padding: 5px;
+	}
+  
+	.show-all {
+	  display: none;
+	}
+  
+	.description__link {
+	  display: block;
+	}
+  
+	.prices__head,
+	.slide--hidden {
+	  display: none;
+	}
+  
+	.slide:nth-child(-n + 8) {
+	  display: flex !important;
+	}
+  }
+  
+  @media (min-width: 768px) and (max-width: 1119px) {
+	.swiper-pagination {
+	  display: none;
+	}
+  
+	.slider__title {
+	  padding-left: 24px;
+	}
+  
+	.swiper-wrapper {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	}
+  
+	.prices__head {
+	  margin-top: 20px;
+	}
+  
+	.slide {
+	  margin: 0 12px 10px 12px;
+	}
+  
+	.prices__service {
+	  flex: 1 1 320px;
+	  align-self: center;
+	}
+  
+	.service__title,
+	.price__title,
+	.time__title {
+	  display: none;
+	}
+  
+	.prices__wrapper {
+	  background-color: white;
+	  border-radius: 6px;
+	}
+  
+	.prices__price {
+	  flex: 1 1 80px;
+	  align-self: center;
+	}
+  
+	.prices__time {
+	  flex: 1 1 110px;
+	  align-self: center;
+	}
+  
+	.prices__goto {
+	  flex: 1 1 20px;
+	  align-self: center;
+	}
+  
+	.prices__slide {
+	  margin: 0 12px 0px 12px;
+	  min-width: 100%;
+	  border: none;
+	  border-radius: 0px;
+	}
+  
+	.prices__head {
+	  min-height: 40px;
+	}
+  
+	.prices__item {
+	  min-height: 64px;
+	  padding: 23px 24px;
+	  border: 1px solid $bgColor;
+	  color: #1b1c21;
+	}
+  
+	.brands__slide {
+	  max-width: 224px;
+	}
+  
+	.tech__slide {
+	  min-width: 224px;
+	  max-width: 224px;
+	}
+  }
+  
+  @media screen and (min-width: 1120px) {
+	.swiper-pagination {
+	  display: none;
+	}
+  
+	.swiper-wrapper {
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: center;
+	}
+  
+	.prices__head {
+	  margin-top: 20px;
+	}
+  
+	.slide {
+	  margin: 0 12px 10px 12px;
+	}
+  
+	.prices__service {
+	  flex: 1 1 320px;
+	  align-self: center;
+	}
+  
+	.service__title,
+	.price__title,
+	.time__title {
+	  display: none;
+	}
+  
+	.prices__wrapper {
+	  background-color: white;
+	  border-radius: 6px;
+	}
+  
+	.prices__price {
+	  flex: 1 1 80px;
+	  align-self: center;
+	}
+  
+	.prices__time {
+	  flex: 1 1 110px;
+	  align-self: center;
+	}
+  
+	.prices__goto {
+	  flex: 1 1 20px;
+	  align-self: center;
+	}
+  
+	.prices__slide {
+	  margin: 0 12px 0px 12px;
+	  min-width: 100%;
+	  border: none;
+	}
+  
+	.prices__head {
+	  min-height: 40px;
+	}
+  
+	.prices__item {
+	  min-height: 64px;
+	  padding: 23px 24px;
+	  border: 1px solid $bgColor;
+	  font-family: TTLakes, sans-serif;
+	}
+  
+	.brands__slide {
+	  max-width: 240px;
+	}
+  
+	.show-all {
+	  margin-top: 10px;
+	  margin-left: 39px;
+	}
+  }

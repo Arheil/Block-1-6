@@ -1,0 +1,89 @@
+@import "../scss/variables";
+@import "../scss/swiper";
+@import "../scss/sidebar";
+@import "../scss/modal";
+@import "../scss/header";
+@import "../scss/main";
+@import "../scss/footer";
+
+@font-face {
+  font-family: "TTLakes";
+  src: url("../font/TTLakes-Regular.woff") format("woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../font/TTLakes-Bold.woff") format("woff");
+  font-weight: bold;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.blurred-space {
+  position: fixed;
+  display: none;
+  opacity: 0.9;
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+html,
+body {
+  font-family: TTLakes, sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: $bgColor;
+  min-width: 320px;
+}
+
+.main-content {
+  background-color: $bgColor;
+  min-width: 320px;
+  max-width: 1120px;
+}
+
+button {
+  padding: 0px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: TTLakes, sans-serif;
+
+  &:hover {
+    filter: brightness(150%);
+  }
+  &:active {
+    border: none;
+    outline: none;
+  }
+}
+
+a:hover,
+button:hover {
+  color: $grey;
+}
+
+@media screen and (min-width: 1120px) {
+  .main-content {
+    min-height: 500px;
+    margin-left: 320px;
+  }
+}

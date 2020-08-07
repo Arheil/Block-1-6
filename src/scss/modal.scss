@@ -1,0 +1,166 @@
+.feedback {
+	background-color: white;
+	min-width: 320px;
+	max-width: 440px;
+	height: 100%;
+	position: fixed;
+	right: -460px;
+	top: 0;
+	transform: translateX(460px);
+	transition: all ease-out 0.5s;
+	z-index: 5;
+  }
+  
+  .feedback__main {
+	padding: 24px 0 0 16px;
+  }
+  
+  .feedback__close-button {
+	margin-left: 4px;
+  }
+  
+  .feedback__title {
+	white-space: nowrap;
+	margin-top: 0px;
+	padding-top: 20px;
+	margin-bottom: 24px;
+  
+	&::before {
+	  content: url("../img/highlight.svg");
+	  margin-left: -16px;
+	  margin-top: 0px;
+	  max-height: 22px;
+	  float: left;
+	}
+  }
+  
+  .feedback__content {
+	margin-top: 24px;
+	position: relative;
+	padding-bottom: 126px;
+  }
+  
+  .input {
+	border: 1px solid #eaeaea;
+	border-radius: 8px;
+	margin-bottom: 16px;
+	width: 90%;
+	height: 48px;
+  }
+  
+  .input:nth-child(4) {
+	min-height: 102px;
+  }
+  
+  input {
+	border: none;
+	position: relative;
+  
+	&:focus {
+	  outline: none;
+	}
+  }
+  
+  .input__inner {
+	margin-top: 2px;
+	margin-left: 2px;
+	padding: 15px 15px 15px 16px;
+	width: 90%;
+	height: 90%;
+  }
+  
+  .input__message {
+	padding-bottom: 80px;
+  }
+  
+  .input__inner::placeholder {
+	color: #b5b6bc;
+  }
+  
+  .feedback__agreement {
+	margin-bottom: 19px;
+  }
+  
+  .feedback__order {
+	position: absolute;
+	right: 5%;
+  }
+  
+  .call {
+	background-color: white;
+	min-width: 320px;
+	max-width: 440px;
+	height: 100%;
+	position: fixed;
+	right: -460px;
+	top: 0;
+	transition: all ease-out 0.5s;
+	z-index: 5;
+  }
+  
+  .call__main {
+	padding: 24px 0 0 16px;
+  }
+  
+  .call__close-button {
+	margin-left: 4px;
+  }
+  
+  .call__title {
+	white-space: nowrap;
+	margin-top: 0px;
+	padding-top: 20px;
+	margin-bottom: 24px;
+  
+	&::before {
+	  content: url("../img/highlight.svg");
+	  margin-left: -16px;
+	  margin-top: 0px;
+	  max-height: 22px;
+	  float: left;
+	}
+  }
+  
+  .call__content {
+	margin-top: 24px;
+	position: relative;
+	padding-bottom: 126px;
+  }
+  
+  .call__agreement {
+	margin-bottom: 19px;
+  }
+  
+  .call__order {
+	position: absolute;
+	right: 5%;
+  }
+  
+  .feedback {
+	box-shadow: 2px 0 40px 0 lightgrey;
+  }
+  
+  .call {
+	box-shadow: 2px 0 40px 0 lightgrey;
+  }
+  
+  .policy-link {
+	color: $pink;
+	text-decoration: none;
+  }
+  
+  @media (min-width: 1120px) {
+	.feedback__close-button {
+	  position: absolute;
+	}
+  
+	.call__close-button {
+	  position: absolute;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.feedback, .call {
+	  max-width: 320px;
+	}
+  }

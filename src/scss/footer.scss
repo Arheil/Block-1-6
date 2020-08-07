@@ -1,0 +1,30 @@
+.lefooter {
+	display: flex;
+	justify-content: space-around;
+	margin: 0px 16px;
+	padding-top: 16px;
+	border-top: 2px solid $borderColor;
+  }
+  
+  .lefooter__text {
+	max-width: 33%;
+	margin: 0 auto;
+	margin-bottom: 16px;
+  }
+  
+  @media (max-width: 767px) {
+	.lefooter {
+	  flex-direction: column;
+	}
+  
+	.lefooter__text {
+	  max-width: 100%;
+	  text-align: center;
+	}
+  }
+  
+  @media (min-width: 768px) {
+	.lefooter__text:last-child {
+	  text-align: right;
+	}
+  }
