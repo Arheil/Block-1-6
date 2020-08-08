@@ -1,7 +1,7 @@
 import "../scss/style.scss";
-import "./scripts/sidebar.js";
-import "./scripts/modal.js";
-import "./scripts/sliders.js";
+import {closeSidebar} from './scripts/sidebar.js';
+import {openModal, closeModal, whiteSpace} from './scripts/modal.js';
+import {showTechButtonOn, showTechButtonOff, showBrandsButtonOn, showBrandsButtonOff} from './scripts/sliders.js'
 
 const tablet = window.matchMedia("(min-width: 768px)");
 export const desktop = window.matchMedia("(min-width: 1120px)");
@@ -13,15 +13,6 @@ const descTabletText = document.querySelector('.description__text--tabletplus');
 const descTabletFullText = document.querySelector('.description__text--full');
 const descFullText = document.querySelector('.description__text--all');
 let descShown = false;
-
-const milk = document.querySelector('.white-space');
-const sidebar = document.querySelector('.sidebar');
-const burger = document.querySelector('.burger-button');
-
-burger.addEventListener('click', function () {
-  sidebar.style.transform = "translateX(400px)";
-  milk.style.visibility = "visible";
-})
 
 const showDescButtonOn = function () {
   descShown = true;
