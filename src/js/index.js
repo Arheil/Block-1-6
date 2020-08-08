@@ -1,6 +1,6 @@
 import "../scss/style.scss";
-import {closeSidebar} from './scripts/sidebar.js';
-import {openModal, closeModal, whiteSpace} from './scripts/modal.js';
+import {closeSidebar, sidebar, whiteSpace, burgerButton} from './scripts/sidebar.js';
+import {openModal, closeModal, callButton, callModal, callCloseButton, feedbackButton, feedbackModal, feedbackCloseButton} from './scripts/modal.js';
 import {showTechButtonOn, showTechButtonOff, showBrandsButtonOn, showBrandsButtonOff} from './scripts/sliders.js'
 
 const tablet = window.matchMedia("(min-width: 768px)");
