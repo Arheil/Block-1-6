@@ -1,5 +1,5 @@
 import { desktop, sidebarShown, main } from "../js/index.js";
-import { closeSidebar, sidebar } from "../js/sidebar.js";
+import { closeSidebar, sidebar } from "./sidebar.js";
 
 const whiteSpace = document.querySelector('.white-space');
 const callButton = document.querySelectorAll('.button__call');
@@ -12,7 +12,7 @@ const feedbackCloseButton = document.querySelector('.feedback__close-button');
 let modalCallShown = false;
 let modalFeedbackShown = false;
 
-const closeModal = function (modal, button, state) {
+export const closeModal = function (modal, button, state) {
   event.preventDefault();
   modal.style.transform = "translateX(460px)";
   if (!desktop.matches) { 
@@ -29,7 +29,7 @@ const closeModal = function (modal, button, state) {
   }
 }
 
-const openModal = function(state, modal, button) {
+export const openModal = function(state, modal, button) {
   event.preventDefault();
     closeSidebar();
     whiteSpace.style.zIndex = "4";
@@ -40,12 +40,12 @@ const openModal = function(state, modal, button) {
         button.style.transform = "translate(-80px, 20px)";
       }
       let state = true;
-      main.style.filter = "opacity(0.8)";
+      main.style.filter = "opacity(0.9)";
       whiteSpace.style.display = "block";
     }
 }
 
-blurredSpace.addEventListener('click', function () {
+whiteSpace.addEventListener('click', function () {
   closeModal(feedbackModal, feedbackCloseButton, modalFeedbackShown);
   closeModal(callModal, callCloseButton, modalCallShown);
   closeSidebar();

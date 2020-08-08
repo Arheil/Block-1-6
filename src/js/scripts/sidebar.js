@@ -2,7 +2,7 @@ import "./modal.js";
 import { desktop, sidebarShown, main } from "../index.js";
 
 export const sidebar = document.querySelector('.sidebar');
-const whiteSpace = document.querySelector('.white-space');
+export const whiteSpace = document.querySelector('.white-space');
 const sidebarCloseButton = document.querySelector('.sidebar__close-button');
 const burgerButton = document.querySelectorAll('.burger-button');
 
@@ -21,10 +21,10 @@ document.querySelectorAll('.burger-button').forEach(burgerButton => {
   burgerButton.addEventListener('click', function () {
     event.preventDefault();
     if (!sidebarShown) {
-      sidebar.style.transform = "translateX(340px)";
+      sidebar.style.transform = "translateX(460px)";
       sidebar.style.display = "block";
       let sidebarShown = true;
-      main.style.filter = "opacity(0.8)";
+      main.style.filter = "opacity(0.9)";
       whiteSpace.style.display = "block";
     }
   });

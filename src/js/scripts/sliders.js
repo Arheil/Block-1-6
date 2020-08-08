@@ -114,3 +114,5 @@ tablet.addListener(e => {
     }
   }
 });
+
+export{showTechButtonOn, showTechButtonOff, showBrandsButtonOn, showBrandsButtonOff};
