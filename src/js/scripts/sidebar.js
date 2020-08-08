@@ -4,7 +4,7 @@ import { desktop, sidebarShown, main } from "../index.js";
 export const sidebar = document.querySelector('.sidebar');
 export const whiteSpace = document.querySelector('.white-space');
 const sidebarCloseButton = document.querySelector('.sidebar__close-button');
-const burgerButton = document.querySelectorAll('.burger-button');
+export const burgerButton = document.querySelectorAll('.burger-button');
 
 export const closeSidebar = function () {
   if (!desktop.matches) {

@@ -2,12 +2,12 @@ import { desktop, sidebarShown, main } from "../js/index.js";
 import { closeSidebar, sidebar } from "./sidebar.js";
 
 const whiteSpace = document.querySelector('.white-space');
-const callButton = document.querySelectorAll('.button__call');
-const callModal = document.querySelector('.call');
-const callCloseButton = document.querySelector('.call__close-button');
-const feedbackButton = document.querySelectorAll('.button__chat');
-const feedbackModal = document.querySelector('.feedback');
-const feedbackCloseButton = document.querySelector('.feedback__close-button');
+export const callButton = document.querySelectorAll('.button__call');
+export const callModal = document.querySelector('.call');
+export const callCloseButton = document.querySelector('.call__close-button');
+export const feedbackButton = document.querySelectorAll('.button__chat');
+export const feedbackModal = document.querySelector('.feedback');
+export const feedbackCloseButton = document.querySelector('.feedback__close-button');
 
 let modalCallShown = false;
 let modalFeedbackShown = false;
