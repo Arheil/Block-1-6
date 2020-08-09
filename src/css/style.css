@@ -469,7 +469,7 @@
 }
   
   .sidebar__item--selected::before {
-	content: url(./src/img/highlight.svg);
+	content: url(../img/highlight.svg);
 	margin-left: -30px;
 	margin-top: -10px;
 	max-height: 22px;
@@ -830,7 +830,7 @@
 	  margin-bottom: 0px; 
 	}
 	  .header__service-title::before {
-		content: url(./static/highlight.svg);
+		content: url(./src/img/highlight.svg);
 		margin-left: -30px;
 		margin-top: 0px;
 		max-height: 22px;
@@ -936,7 +936,7 @@
 	  margin-right: auto; 
 	}
 	  .uppermenu__service-title::before {
-		content: url(./src/img/highlight.svg);
+		content: url(../img/highlight.svg);
 		margin-left: -40px;
 		margin-top: 0px;
 		max-height: 22px;
