@@ -1,7 +1,7 @@
 import "../scss/style.scss";
 import {closeSidebar, sidebar, whiteSpace, burgerButton} from './scripts/sidebar.js';
 import {openModal, closeModal, callButton, callModal, callCloseButton, feedbackButton, feedbackModal, feedbackCloseButton} from './scripts/modal.js';
-import {showTechButtonOn, showTechButtonOff, showBrandsButtonOn, showBrandsButtonOff, brandsShowAll, techShowAll, techWrapper, brandsWrapper, techShowAllImg, techShowAllText, brandsShowAllImg, brandsShowAllText, tablet, activeClasses, show} from './scripts/sliders.js'
+import {showTechButtonOn, showTechButtonOff, showBrandsButtonOn, showBrandsButtonOff, brandsShowAll, techShowAll, techWrapper, brandsWrapper, techShowAllImg, techShowAllText, brandsShowAllImg, brandsShowAllText, activeClasses, show} from './scripts/sliders.js'
 
 const tablet = window.matchMedia("(min-width: 768px)");
 export const desktop = window.matchMedia("(min-width: 1120px)");
