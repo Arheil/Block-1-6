@@ -1,7 +1,7 @@
 import "../scss/style.scss";
 import {closeSidebar, sidebar, whiteSpace, burgerButton} from './scripts/sidebar.js';
 import {openModal, closeModal, callButton, callModal, callCloseButton, feedbackButton, feedbackModal, feedbackCloseButton} from './scripts/modal.js';
-import {showTechButtonOn, showTechButtonOff, showBrandsButtonOn, showBrandsButtonOff} from './scripts/sliders.js'
+import {showTechButtonOn, showTechButtonOff, showBrandsButtonOn, showBrandsButtonOff, brandsShowAll, techShowAll, techWrapper, brandsWrapper, techShowAllImg, techShowAllText, brandsShowAllImg, brandsShowAllText, tablet, activeClasses, show} from './scripts/sliders.js'
 
 const tablet = window.matchMedia("(min-width: 768px)");
 export const desktop = window.matchMedia("(min-width: 1120px)");
@@ -14,7 +14,12 @@ const descTabletFullText = document.querySelector('.description__text--full');
 const descFullText = document.querySelector('.description__text--all');
 let descShown = false;
 
+
+console.log('index.js подключен');
+
+
 const showDescButtonOn = function () {
+  show.style.display = "block";
   descShown = true;
   descTabletText.style.display = "inline";
   descFullText.style.display = "inline";
@@ -42,4 +47,6 @@ descShowAll.addEventListener('click', function () {
   } else {
     showDescButtonOff();
   }
+  descShowAll.classList.toggle('show-all');
+  console.log('descShowAll Работает');
 });
