@@ -17,7 +17,7 @@ export const closeSidebar = function () {
   }
 }
 
-document.querySelectorAll('.burger-button').forEach(burgerButton => {
+burgerButton.forEach(burgerButton => {
   burgerButton.addEventListener('click', function () {
     event.preventDefault();
     if (!sidebarShown) {

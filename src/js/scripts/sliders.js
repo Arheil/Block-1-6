@@ -42,11 +42,13 @@ const brandsWrapper = document.querySelector(".brands__wrapper");
 const techShowAllImg = document.querySelector(".tech__show-all > .show-all__img");
 const techShowAllText = document.querySelector(".tech__show-all > .show-all__text");
 const brandsShowAllImg = document.querySelector(".brands__show-all > .show-all__img");
-const brandsShowAllText = document.querySelector(".brands__show-all > .show-all__text");
+const brandsShowAllText = document.querySelector(".brands__show-all > .show-all__text")
+const show = document.querySelectorAll('.show-all');
 let brandsListShown = false;
 let techListShown = false;
 
 const showTechButtonOn = function () {
+  show.style.display = "block";
   techListShown = true;
   techShowAllImg.style.transform = "rotate(180deg)";
   techShowAllText.textContent = "Скрыть";
@@ -61,6 +63,7 @@ const showTechButtonOff = function () {
 }
 
 const showBrandsButtonOn = function () {
+  show.style.display = "block";
   brandsListShown = true;
   brandsShowAllImg.style.transform = "rotate(180deg)";
   brandsShowAllText.textContent = "Скрыть";
@@ -115,4 +118,4 @@ tablet.addListener(e => {
   }
 });
 
-export{showTechButtonOn, showTechButtonOff, showBrandsButtonOn, showBrandsButtonOff};
+export {showTechButtonOn, showTechButtonOff, showBrandsButtonOn, showBrandsButtonOff, brandsShowAll, techShowAll, techWrapper, brandsWrapper, techShowAllImg, techShowAllText, brandsShowAllImg, brandsShowAllText, tablet, activeClasses, show};

@@ -13,7 +13,6 @@ let modalCallShown = false;
 let modalFeedbackShown = false;
 
 export const closeModal = function (modal, button, state) {
-  event.preventDefault();
   modal.style.transform = "translateX(460px)";
   if (!desktop.matches) { 
     sidebar.style.transform = "translateX(0px)"; 
@@ -30,7 +29,6 @@ export const closeModal = function (modal, button, state) {
 }
 
 export const openModal = function(state, modal, button) {
-  event.preventDefault();
     closeSidebar();
     whiteSpace.style.zIndex = "4";
     if (!state) {
@@ -52,17 +50,17 @@ whiteSpace.addEventListener('click', function () {
   whiteSpace.style.zIndex = "2";
 })
 
-document.querySelectorAll('.button__call').forEach(feedbackButton => {
+callButton.forEach(feedbackButton => {
   feedbackButton.addEventListener('click', function () {
     openModal(modalCallShown, callModal, callCloseButton);
   });
 })
 
-document.querySelectorAll('.button__chat').forEach(feedbackButton => {
+/* feedbackButton.forEach(feedbackButton => {
   feedbackButton.addEventListener('click', function () {
     openModal(modalFeedbackShown, feedbackModal, feedbackCloseButton);
   });
-})
+}) */
 
 callCloseButton.addEventListener('click', function () {
   closeModal(callModal, callCloseButton, modalCallShown);
