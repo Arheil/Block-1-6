@@ -1031,9 +1031,8 @@
 	  color: #7e7e82; 
 }
 	.get-offer__link::after {
-	  content: url('./src/img/arrow.svg');
+	  content: url('../img/arrow.svg');
 	  padding-left: 10px;
-	  /* float: right;  */
 }
   
   @media (max-width: 767px) {
