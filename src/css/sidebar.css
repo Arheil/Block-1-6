@@ -25,6 +25,8 @@ button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'TT Lakes';
+  top: 0;
+  left: 0;
 }
 
 .sidebar__header {
