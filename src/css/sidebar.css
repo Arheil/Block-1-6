@@ -18,6 +18,8 @@ button {
 .sidebar {
   min-width: 320px;
   max-width: 360px;
+  top: 0;
+  left: 0;
   background: #FFFFFF;
   -webkit-box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
   box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2), -2px 0px 4px rgba(69, 79, 126, 0.02);
@@ -25,8 +27,6 @@ button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: 'TT Lakes';
-  top: 0;
-  left: 0;
 }
 
 .sidebar__header {
@@ -82,8 +82,20 @@ button {
   margin-left: -40px;
 }
 
+.sidebar__item--selected {
+  color: #7e7e82 !important;
+}
+
+.sidebar__item--selected::before {
+  content: url("../img/highlight.svg");
+  margin-left: -30px;
+  margin-top: -10px;
+  max-height: 22px;
+  float: left;
+}
+
 .sidebar__link::before {
-  content: url("../img/img-content/highlight.svg");
+  content: url("../img/highlight.svg");
   margin-left: -24px;
   display: inline-block;
   vertical-align: middle;
